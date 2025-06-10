@@ -31,7 +31,7 @@ class Ratings:
     def popularity(self, movie_id):
         if movie_id not in self.movie_hash:
             return 3
-        # if movie_id not in hash, return 1(not popular)        
+        # if movie_id not in hash, return 3        
         rate_list = self.movie_hash[movie_id]
         
         if len(rate_list) < 2:
